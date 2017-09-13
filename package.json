@@ -1,0 +1,19 @@
+{
+  "name": "whoami",
+  "version": "1.0.0",
+  "description": "My Personal Data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamArora15/shubhamarora.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhamArora15/shubhamarora/issues"
+  },
+  "homepage": "https://github.com/shubhamArora15/shubhamarora#readme"
+}
