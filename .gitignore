@@ -1,0 +1,3 @@
+# Ignoring Folders to upload on git
+node_modules/
+npm-debug.log
