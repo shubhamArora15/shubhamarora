@@ -19,6 +19,7 @@
   "homepage": "https://github.com/shubhamArora15/shubhamarora#readme",
   "dependencies": {
     "express": "^4.15.4",
+    "mongodb": "^2.2.31",
     "nodemon": "^1.12.1"
   }
 }

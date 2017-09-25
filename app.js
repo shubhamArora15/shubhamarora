@@ -2,6 +2,9 @@ var http = require('http');
 var path = require('path');
 var express = require('express');
 var router = express.Router();
+var mongo = require('mongodb');
+
+
 /**
  * Creating instances for .
  */
@@ -35,6 +38,14 @@ function onListening(){
   console.log("Server is Started")
 }
 
+var serverInstance = new mongo.Server('localhost', 27017, {auto_reconnect: true});
+var db = new mongo.Db('dbNew', serverInstance);
+
+db.open(function(err, db) {
+    // now a connection is established
+});
+
+
 app.get('/', function(req, res) {
-    res.sendFile('index.html', {root: __dirname })
+  res.sendFile("index.html",{root:__dirname});
 });
