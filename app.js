@@ -49,3 +49,7 @@ db.open(function(err, db) {
 app.get('/', function(req, res) {
   res.sendFile("index.html",{root:__dirname});
 });
+
+app.get('/myResume', function(req, res) {
+  res.sendFile("myResume.pdf",{root:__dirname});
+});
