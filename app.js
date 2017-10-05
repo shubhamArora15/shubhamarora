@@ -16,7 +16,7 @@ var app = express();
 var port = process.env.PORT || '8111';
 app.set('port', port);
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 /**
  * Setting up server.
