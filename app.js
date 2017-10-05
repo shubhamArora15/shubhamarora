@@ -8,15 +8,15 @@ var mongo = require('mongodb');
 /**
  * Creating instances for .
  */
-
 var app = express();
 
 /**
  * Get port from environment and store in Express.
  */
-
 var port = process.env.PORT || '8111';
 app.set('port', port);
+
+app.use('/public', express.static(path.join(__dirname, 'public'))))
 
 /**
  * Setting up server.
